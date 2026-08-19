@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mexlex-agent"
+version = "0.1.0"
+description = "Agente RAG conversacional sobre leyes mexicanas y la CPEUM (proyecto de aprendizaje de LangChain)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# Chainlit genera esto al correr la app (config local + traducciones)
+.chainlit/
+.files/

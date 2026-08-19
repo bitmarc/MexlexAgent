@@ -1,0 +1,26 @@
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.2.0
+langchain-text-splitters>=0.3.0
+azure-search-documents>=11.5.1
+azure-identity>=1.17.0
+pypdf>=4.3.0
+python-dotenv>=1.0.1
+pydantic-settings>=2.4.0
+
+# Fase 2: UI de chat
+chainlit>=2.0.0
+
+# Fase 3: grafo con memoria (checkpointer)
+langgraph>=0.2.0
+
+# Fase 4: búsqueda web como tool (opcional, requiere TAVILY_API_KEY)
+langchain-tavily>=0.2.0
+
+# Fase 7: checkpointer durable en Cosmos DB NoSQL (opcional, requiere
+# AZURE_COSMOS_ENDPOINT). Sin él el historial vive en memoria.
+langchain-azure-cosmosdb>=1.0.0
+
+# Desarrollo
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

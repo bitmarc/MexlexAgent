@@ -1,0 +1,53 @@
+[
+  {
+    "id": "articulo-exacto",
+    "pregunta": "dime de qué habla el artículo 19 de la Ley Federal de Cinematografía",
+    "tool_esperada": "obtener_articulo",
+    "articulo_esperado": 19,
+    "debe_contener": [["diez por ciento", "10%", "10 %"], "exhibición"]
+  },
+  {
+    "id": "articulo-sin-guion",
+    "pregunta": "qué dice el artículo 47 de la Ley Federal de Cinematografía",
+    "tool_esperada": "obtener_articulo",
+    "articulo_esperado": 47,
+    "debe_contener": ["aseguramiento"]
+  },
+  {
+    "id": "tematica",
+    "pregunta": "qué artículo de la Ley Federal de Cinematografía habla sobre precios por exhibición pública",
+    "tool_esperada": "buscar_en_leyes",
+    "debe_contener": ["20"]
+  },
+  {
+    "id": "seguimiento",
+    "pregunta": "y el siguiente artículo?",
+    "contexto_previo": "dime de qué habla el artículo 19 de la Ley Federal de Cinematografía",
+    "tool_esperada": "obtener_articulo",
+    "articulo_esperado": 20
+  },
+  {
+    "id": "charla-sin-tools",
+    "pregunta": "gracias, muy claro",
+    "tools_esperadas": []
+  },
+  {
+    "id": "fuera-de-corpus",
+    "pregunta": "qué dice el artículo 999 de la Ley Federal de Cinematografía",
+    "tool_esperada": "obtener_articulo",
+    "debe_admitir_ignorancia": true
+  },
+  {
+    "id": "ambiguedad-entre-leyes",
+    "pregunta": "dime el artículo 19",
+    "tool_esperada": "obtener_articulo",
+    "debe_contener": ["Cinematografía", "Datos Personales"]
+  },
+  {
+    "id": "otra-ley",
+    "pregunta": "qué dice el artículo 1 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares",
+    "tool_esperada": "obtener_articulo",
+    "articulo_esperado": 1,
+    "debe_contener": ["orden público"]
+  }
+]
